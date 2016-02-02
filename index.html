@@ -1,1 +1,7 @@
-<script>location="https://github.com/riskers/blog/issues"</script>
+<!doctype html>
+<script>
+  var id = parseInt(location.search.substring(1));
+  location.replace(
+      'https://github.com/atian25/blog/issues' +
+          (id ? '/' + id : ''))
+</script>
